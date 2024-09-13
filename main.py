@@ -25,7 +25,9 @@ def save_file_path(prompt):
 # Shapefile, TIF 파일 경로 및 출력 경로 선택
 shapefile_path = get_file_path("Shapefile 경로를 선택하세요", "Shapefile")
 tif_path = get_file_path("TIF 파일 경로를 선택하세요", "TIF")
-output_path = save_file_path("결과를 저장할 TIF 파일 경로를 선택하세요")
+
+# 결과 파일 이름 자동 생성 (원본 파일명 뒤에 "_processed" 추가)
+output_path = os.path.splitext(tif_path)[0] + "_processed.tif"
 
 # Shapefile 읽기
 gdf = gpd.read_file(shapefile_path)
