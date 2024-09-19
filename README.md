@@ -3,10 +3,10 @@ Shapefile에서 좌표 정보를 추출해 TIF 이미지에 적용하고, 파일
 
 1. 환경 구성 (window 64bit, conda env)
 
-   conda create -n {가상환경이름} python=3.8
-   git clone https://github.com/kimpgithub/GeoTiffEditor.git
-   cd GeoTiffEditor
-   conda install -c conda-forge geopandas rasterio proj gdal
+   - conda create -n {가상환경이름} python=3.8
+   - git clone https://github.com/kimpgithub/GeoTiffEditor.git
+   - cd GeoTiffEditor
+   - conda install -c conda-forge geopandas rasterio proj gdal
 
 2. 국토지리정보원 데이터 다운로드
    https://map.ngii.go.kr/ms/map/NlipMap.do
